@@ -1,0 +1,21 @@
+    .grid {
+        display: grid;
+        &-features-rendering {
+            @include grid-features;
+        }
+        &-features-pro {
+            @include grid-features;
+        }
+        &-features-animation {
+            @include grid-features;
+        }
+        &-features-keyshotweb {
+            @include grid-features;
+        }
+    }
+    
+    a.active {
+        background: rgb(0, 140, 255) !important;
+        color: white !important;
+        border-radius: 20px !important;
+    }

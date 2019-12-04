@@ -1,0 +1,115 @@
+.degradee-section-vr {
+    background: linear-gradient(45deg, #67e6ff 0%, #3f10c0 88%) !important;
+    &.position-relative {
+        top: -50px;
+        padding-top: 80px;
+    }
+}
+
+.divider {
+    &-top {
+        top: 0px;
+    }
+    &-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+    position: relative;
+    background: $degradeeColor;
+    padding: 3px;
+    margin: auto;
+    &-inner {
+        border-radius: 50%;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 57px;
+        color: rgba($color: #333333, $alpha: 0.7);
+        font-weight: 700;
+    }
+    &-bottom {
+        //! img 
+        max-width: 250px;
+        //! ./img
+        bottom: -14px;
+        left: 0;
+        right: 0;
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.font-weight-bold {
+    &-800 {
+        font-weight: 800;
+    }
+}
+
+.rotate {
+    &-180 {
+        transform: rotate(180deg);
+    }
+}
+
+.object-absolute {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.text-shadow-h2 {
+    text-shadow: 3px 3px 5px black;
+    font-size: 40px !important;
+    margin: auto;
+    @media (max-width: 575px) {
+        font-size: 2.5rem !important;
+    }
+}
+
+.box-keyshot-vr {
+    &-one {
+        padding: 15px 0px;
+        p {
+            font-size: 18px !important;
+        }
+    }
+    &-two {
+        padding: 15px 0px;
+        p {
+            font-size: 18px !important;
+        }
+    }
+    &-three {
+        padding: 15px 0px;
+        p {
+            font-size: 18px !important;
+        }
+        span {
+            font-size: 23px !important;
+        }
+    }
+    &-four {
+        padding: 15px 0px;
+        p {
+            font-size: 18px !important;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+.img-full-home {
+    @include image-full($imgKeyShot9);
+}
+
+.img-card-one {
+    @include image-card($imgCardOne);
+    position: relative;
+    .content-card-absolute {
+        position: relative;
+        z-index: 2;
+        hr {
+            padding: 0.3rem;
+            background: linear-gradient(to right, #0046ff, #33caff);
+            margin: 30px 0;
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.box-relative {
+    top: -60px;
+}
+
+.text-detail-1 {
+    top: 0;
+    right: 0;
+}
+
+.text-detail-2 {
+    top: 0;
+    left: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: $imgRelog;
+    /* Set a specific height */
+    height: 350px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .p-20 {
+        padding: 10rem !important;
+        width: 100%;
+    }
+    h1 {
+        font-size: 35px !important;
+    }
+    h2 {
+        text-align: center;
+        &.display-3 {
+            text-align: center;
+            font-size: 3rem !important;
+        }
+    }
+    p {
+        font-size: 14px !important;
+    }
+    .img-full-footer {
+        padding: 15px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+    div.card.w-75 {
+        width: 100% !important;
+    }
+    div.text-center.w-50.mx-auto {
+        width: 100% !important;
+    }
+    .text-detail-1 {
+        position: relative !important;
+        top: unset;
+        left: unset;
+        width: 100% !important;
+        text-align: center !important;
+        hr {
+            margin: {
+                left: auto !important;
+                right: auto !important;
+            }
+        }
+        p {
+            width: 100% !important;
+        }
+    }
+    .text-detail-2 {
+        position: relative !important;
+        top: unset;
+        left: unset;
+        width: 100% !important;
+        text-align: center !important;
+        hr {
+            margin: {
+                left: auto !important;
+                right: auto !important;
+            }
+        }
+        p {
+            width: 100% !important;
+        }
+    }
+    .relative-box-parallax {
+        width: 100% !important;
+        img {
+            width: 100px !important;
+            height: auto !important;
+            &.p-4.img-fluid {
+                width: 250px !important;
+            }
+        }
+    }
+    .mobile-view {
+        text-align: center !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    main {
+        background: {}
+    }
+    .text-detail-1 {
+        position: relative !important;
+        top: unset;
+        left: unset;
+        width: 100% !important;
+        text-align: center !important;
+        hr {
+            margin: {
+                left: auto !important;
+                right: auto !important;
+            }
+        }
+        p {
+            width: 100% !important;
+        }
+    }
+    .text-detail-2 {
+        position: relative !important;
+        top: unset;
+        left: unset;
+        width: 100% !important;
+        text-align: center !important;
+        hr {
+            margin: {
+                left: auto !important;
+                right: auto !important;
+            }
+        }
+        p {
+            width: 100% !important;
+        }
+    }
+    .mobile-view {
+        text-align: center !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    main {
+        background: {}
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    p {
+        font-size: 18px !important;
+    }
+    .img-full-footer {
+        padding: 20rem;
+    }
+}

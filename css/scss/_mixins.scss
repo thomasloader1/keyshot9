@@ -1,0 +1,76 @@
+@mixin image-full($img) {
+    background: {
+        image: $img;
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    width: 100%;
+}
+
+@mixin image-card($img) {
+    background: {
+        image: $img;
+        repeat: no-repeat;
+        position: center;
+    }
+    object-fit: cover;
+}
+
+@mixin media($size) {
+    @if $size=='tabletUpwards' {
+        @media screen and ( min-width: $minTablet) {
+            @content;
+        }
+    }
+}
+
+@mixin grid-features {
+    grid-template: {
+        columns: 1fr;
+        rows: repeat(auto-fit, 1fr);
+    }
+    gap: 1rem;
+    .item {
+        text-align: center;
+        i {
+            color: #666;
+        }
+        h4 {
+            font-size: 20px !important;
+            color: #333;
+        }
+        p {
+            font-size: 18px !important;
+            color: #666;
+        }
+        .svg-icon {
+            margin-top: 10px;
+            width: 2.5rem;
+        }
+    }
+    @media (min-width: 500px) and (max-width: 768px) {
+        grid-template: {
+            columns: repeat(2, 1fr);
+        }
+        ;
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+        grid-template: {
+            columns: repeat(3, 1fr);
+        }
+        ;
+    }
+    @media (min-width: 992px) and (max-width:1199px) {
+        grid-template: {
+            columns: repeat(4, 1fr);
+        }
+        ;
+    }
+    @media (min-width: 1200px) {
+        grid-template: {
+            columns: repeat(4, 1fr);
+        }
+        ;
+    }
+}
